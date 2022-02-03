@@ -1,0 +1,799 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/wood.jpg);
+}
+.laptop{
+    position: absolute;
+    top: 0;
+    left: 1%;
+    width: 98vw;
+    height: 99vh;
+}
+
+.monitor{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 45%;
+    border-radius: 15%;
+    color: rgb(4, 57, 66);
+    background: rgb(255,38,0);
+background: linear-gradient(213deg, rgba(255,38,0,1) 0%, rgba(247,161,99,1) 12%,
+ rgba(255,0,0,1) 57%, rgba(255,144,7,1) 80%, rgba(255,0,0,1) 97%);
+}
+.monitor-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.044);
+    border-radius: 15%;
+    box-shadow: 3px 3px 15px black, inset 0 0 10px black;
+    color: rgb(4, 57, 66);
+ z-index: 100;
+}
+.screen-container{
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    width: 94%;
+    height: 94%;
+    background: rgb(255, 255, 255);
+    border-radius: 15%;
+ 
+}
+.screen{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    width: 96%;
+    height: 94%;
+   background-color: rgb(159, 245, 248);
+    border-radius: 15%;
+    box-shadow: inset 0 0 15px black;
+}
+.screen::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+   background-color: rgb(159, 245, 248);
+    border-radius: 15%;
+    box-shadow: inset 0 0 15px black;
+ background-image: url(../images/112.jpg);
+ background-size: 100% 100%;
+    background-repeat: no-repeat;
+opacity: 0.5;
+}
+.label{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    z-index: 40;
+    font-weight: bolder;
+    
+}
+.toy1{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 20%;
+    height: 13%;
+    transform: translateX(-50%);
+    background-image: url(../images/toy1.png);
+}
+.toy2{
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    width: 15%;
+    height: 33%;
+   background-image: url(../images/toy.png);
+}
+.toy3{
+    position: absolute;
+    top: 55%;
+    left: 2%;
+    width: 10%;
+    height: 33%;
+   background-image: url(../images/toy3.png);
+}
+.toy4{
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    width: 15%;
+    height: 33%;
+   background-image: url(../images/toy4.png);
+}
+.toy5{
+    position: absolute;
+    top: 55%;
+    right: 2%;
+    width: 10%;
+    height: 33%;
+   background-image: url(../images/toy5.png);
+}
+.inner-screen{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 60%;
+   background-color: rgb(179, 205, 245);
+   border: 10px solid rgb(4, 57, 66);
+    border-radius: 15%;
+    box-shadow: inset 0 0 15px black;
+    z-index: 50;
+  }
+  .alphabet-display, .other-display, .color-display{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 15%;
+  
+  }
+  .letter{
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translate(-5%, -50%);
+      font-size: 50px;
+      font-weight: bolder;
+  
+  }
+  .others-name{
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 18px;
+      font-weight: bolder;
+  
+  }
+.image{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 50%;
+    height: 60%;
+    background-image: url(../images/apple.png);
+}
+.others-image{
+    position: absolute;
+    top: 5%;
+    right: 25%;
+    width: 50%;
+    height: 60%;
+}
+.name{
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+}
+
+.hinges{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+   width: 60%;
+    height: 10%;
+  box-shadow: inset 0 0 5px black, 0 0 5px black;
+background: rgb(247,216,203);
+background: linear-gradient(180deg, rgba(247,216,203,1) 3%, rgba(244,244,244,1) 22%,
+ rgba(241,239,227,1) 80%, rgba(246,208,191,1) 100%);
+}
+.hinge1{
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    background: rgb(169, 247, 243);
+    background: rgb(255,0,0);
+background: linear-gradient(180deg, rgba(255,0,0,1) 0%, 
+rgba(255,60,0,1) 22%, rgba(255,65,7,1) 80%, rgba(255,0,0,1) 100%);
+box-shadow: inset 3px 0 5px rgb(92, 26, 0), inset -3px 0 5px rgb(75, 18, 1);
+
+}
+.cpu{
+    position: absolute;
+    top: 55%;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    background: rgb(247,216,203);
+background: radial-gradient(circle, rgb(255, 255, 255) 3%, rgb(255, 247, 241) 22%,
+ rgb(247, 246, 204) 100%);
+ box-shadow: inset 0 0 15px black, 0 0 10px black;
+border-radius: 10%;
+}
+
+.cpu-monitor{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 80%;
+    height: 60%;
+    border-radius: 10%;
+    border-bottom-left-radius: 19%;
+    border-bottom-right-radius: 19%;
+    color: rgb(4, 57, 66);
+    background: rgb(255,38,0);
+background: linear-gradient(213deg, rgb(246, 253, 245) 0%, rgb(221, 255, 224) 12%,
+  rgb(232, 247, 228) 97%);
+  box-shadow: inset 2px 2px 15px rgb(33, 122, 3), inset -2px -2px 15px rgb(33, 122, 3);
+  transition: transform 3s;
+  transform-style: preserve-3d;
+}
+/* .cpu-monitor:hover {
+  transform: rotateX(180deg);
+  top: -100%;
+} */
+.speaker{
+    position: absolute;
+    top: 7%;
+    left: 87%;
+    width: 10%;
+    height: 30%;
+    border-radius: 45%;
+    background: rgb(0, 255, 242);
+background-image: radial-gradient(circle, rgb(49, 49, 49) 3%, rgba(243, 236, 231, 0.356) 22%,
+ rgba(247, 246, 204, 0) 100%);
+ background-size: 3px 3px;
+ background-repeat: repeat;
+ border: 3px ridge rgb(199, 193, 193);
+ box-shadow: inset 0 0 15px rgb(0, 0, 0), 0 0 10px rgb(1, 255, 179);
+ animation: speaker 5s infinite;
+}
+@keyframes speaker {
+    0%{
+        background-color: rgb(60, 255, 0);
+        box-shadow: inset 0 0 15px rgb(0, 0, 0), 0 0 10px rgb(22, 255, 1);
+
+   }
+    20%{
+        background-color: rgb(174, 0, 255);
+        box-shadow: inset 0 0 15px rgb(0, 0, 0), 0 0 10px rgb(255, 1, 242);
+
+    }
+    40%{
+        background-color: rgb(255, 230, 0);
+        box-shadow: inset 0 0 15px rgb(0, 0, 0), 0 0 10px rgb(230, 255, 1);
+
+    }
+    60%{
+        background-color: rgb(0, 26, 255);
+         box-shadow: inset 0 0 15px rgb(0, 0, 0), 0 0 10px rgb(1, 48, 255);
+
+    }
+    80%{
+        background-color: rgb(255, 0, 0);
+         box-shadow: inset 0 0 15px rgb(0, 0, 0), 0 0 10px rgb(255, 1, 1);
+
+
+    }
+}
+.mouse{
+    position: absolute;
+    top: 45%;
+    left: 87%;
+    width: 10%;
+    height: 25%;
+    border-radius: 45%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    color: rgb(4, 57, 66);
+    background: rgb(255,0,0);
+background: linear-gradient(180deg, rgba(255,0,0,1) 0%, 
+rgba(255,60,0,1) 22%, rgba(255,65,7,1) 80%, rgba(255,0,0,1) 100%);
+box-shadow: inset 3px 0 5px rgb(92, 26, 0), inset -3px 0 5px rgb(75, 18, 1);
+}
+.mouse::after{
+    content:"" ;
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    width: 80%;
+    height: 70%;
+    border-radius: 85%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    color: rgb(4, 57, 66);
+    background: rgb(17, 0, 255);
+background: linear-gradient(180deg, rgb(118, 211, 240) 0%, 
+rgb(0, 195, 255) 22%, rgb(7, 106, 255) 80%, rgb(19, 22, 187) 100%);
+box-shadow: inset 0 0 5px rgb(6, 0, 92), inset 0 0 5px rgb(23, 4, 94);
+/* box-shadow: inset 3px 0 5px rgb(6, 0, 92), inset -3px 0 5px rgb(11, 1, 48),
+            1px 1px 6px rgb(6, 0, 92); */
+
+}
+.mouse::before{
+    content:"" ;
+    position: absolute;
+    top: 19%;
+    left: 40%;
+    width: 20%;
+    height: 30%;
+    border-radius: 15%;
+    color: rgb(4, 57, 66);
+    background: rgb(17, 0, 255);
+background: linear-gradient(180deg, rgb(118, 211, 240) 0%, 
+rgb(0, 195, 255) 22%, rgb(7, 106, 255) 80%, rgb(19, 22, 187) 100%);
+box-shadow: inset 0 0 5px rgb(6, 0, 92), inset 0 0 5px rgb(23, 4, 94);
+z-index: 30;
+}
+
+.links{
+     position: absolute;
+    top: 84%;
+    left: 5%;
+    width: 12%;
+    height: 13%;
+    border-radius: 50%;
+    color: rgb(4, 57, 66);
+    background: rgb(17, 0, 255);
+background: linear-gradient(180deg, rgb(118, 211, 240) 0%, 
+rgb(0, 195, 255) 22%, rgb(7, 106, 255) 80%, rgb(19, 22, 187) 100%);
+z-index: 30;
+font-size: 10px;
+font-weight: bold;
+color: bisque;
+padding: 5px;
+/* -webkit-text-stroke: 0.5px orangered; */
+border: 2px ridge orangered;
+box-shadow: 0 0 15px rgb(145, 18, 2), inset 0 0 15px rgb(9, 1, 41);
+}
+.links span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.link2{
+    left: 20%;
+}
+.link3{
+    left: 35%;
+}
+.link4{
+    left: 50%;
+}
+.link5{
+    left: 65%;
+}
+.link6{
+    left: 80%;
+}
+.alphabets{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    color: rgb(252, 248, 220);
+  z-index: 30;
+padding: 5px;
+/* -webkit-text-stroke: 0.5px orangered; */
+font-weight: bolder;
+
+}
+.letters, .numbers, .words, .shapes{
+    position: absolute;
+    top: 7%;
+    left: 2%; 
+    width: 10%;
+    height: 28%;
+    color: rgb(252, 248, 220);
+  z-index: 30;
+padding: 5px;
+margin: 1px;
+background: rgb(255,38,0);
+background: linear-gradient(213deg, rgba(255,38,0,1) 0%, rgba(247,161,99,1) 12%,
+ rgba(255,0,0,1) 57%, rgba(255,144,7,1) 80%, rgba(255,0,0,1) 97%);
+box-shadow: 0 0 5px rgb(180, 196, 238), inset 3px 3px 8px rgb(156, 12, 2),
+             inset -3px -3px 8px rgb(156, 12, 2);
+border: 3px ridge rgb(76, 123, 250);
+border-radius: 25px;
+background-position: 30% 30% ;
+font-weight: bolder;
+}
+.alphabets{
+    display: none;
+}
+.word-case{
+    display: block;
+}
+.number-case{
+    display: none;
+}
+.shapes-container{
+    display: none;
+}
+.animals-container{
+    display: none;
+}
+.vehicles-container{
+    display: none;
+}
+.words{
+    font-size: 12px ;
+}
+
+.shapes{
+    font-size: 12px ;
+    width: 18%;
+    height: 40%;
+    left: 3%; 
+    background: rgb(43, 255, 0);
+background: linear-gradient(180deg, rgb(91, 240, 4) 0%, 
+rgb(33, 133, 13) 22%, rgb(12, 131, 12) 80%, rgb(2, 66, 5) 100%);
+border: 5px solid silver;
+box-shadow: 2px 2px 5px black, inset 0 0 5px rgb(7, 48, 1);
+}
+.s2{
+    left: 22%; 
+}
+.s3{
+    left: 41%; 
+}
+.s4{
+    left: 60%; 
+}
+.s5{
+    left: 79%; 
+}
+.s6{
+    top: 52%;
+}
+.s7{
+    left: 22%; 
+    top: 52%;
+}
+.s8{
+    left: 41%; 
+       top: 52%;
+}
+.s9{
+    left: 60%; 
+       top: 52%;
+}
+.s10{
+    left: 79%; 
+       top: 52%;
+}
+.b, .a2, .w2{
+    left: 12.5%; 
+}
+.c, .a3, .w3{
+    left: 23%; 
+}
+.d, .a4, .w4{
+    left: 33.5%; 
+}
+.e, .a5, .w5{
+    left: 44%; 
+}
+.f, .a6, .w6{
+    left: 54.5%; 
+}
+.g, .a7, .w7{
+    left: 65%; 
+}
+.h, .a8, .w8{
+    left: 75.5%; 
+}
+.i, .a9, .w9{
+    left: 86%; 
+}
+.j, .a10, .w10{
+    top: 37%;
+  }
+.k, .a11, .w11{
+    left: 12.5%; 
+    top: 37%;
+
+}
+.l, .a12, .w12{
+    top: 37%;
+    left: 23%; 
+}
+.m, .a13, .w13{
+    top: 37%;
+    left: 33.5%; 
+}
+.n, .a14, .w14{
+    left: 44%;   
+     top: 37%;
+
+}
+.o, .a15, .w15{
+    left: 54.5%;   
+     top: 37%;
+
+}
+.p, .a16, .w16{
+    left: 65%;   
+     top: 37%;
+
+}
+.q, .a17, .w17{
+    left: 75.5%;    
+    top: 37%;
+
+}
+.r, .a18, .w18{
+    left: 86%;    
+    top: 37%;
+}
+.s, .w19{
+    left: 5%;
+    top: 68%;
+}
+.t, .a19, .w20{
+    left: 15.5%;
+    top: 68%;
+}
+.u, .a20, .w21{
+    left: 26.5%;
+    top: 68%;
+}
+.v, .a21, .w22{
+    left: 37%;
+    top: 68%;
+}
+.w, .a22, .w23{
+    left: 47.5%;
+    top: 68%;
+}
+.x, .a23, .w24{
+    left: 58%;
+    top: 68%;
+}
+.y, .a24, .w25{
+    left: 69%;
+    top: 68%;
+}
+.z, .a25, .w26{
+    left: 79.5%;
+    top: 68%;
+}
+.colors-btn-container{
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    width: 80%;
+    height: 15%;
+   z-index: 30;
+
+}
+.colors-btn{
+    position: absolute;
+    top: 2%;
+    left: 0%;
+    width: 6%;
+    height: 100%;
+    background-color: rgba(216, 173, 173, 0);
+    border-radius: 50%;
+ overflow: hidden;
+ border: 2px ridge silver;
+ background: rgb(246,243,243);
+background: linear-gradient(180deg, rgba(246,243,243,1) 36%, rgba(214,211,210,1) 58%, rgba(237,232,230,1) 100%);
+}
+.liquid{
+    position: relative;
+    left: 10%;
+    top:10%;
+    width: 80%;
+    height: 80%;
+    background-color: #4973ff;
+    box-shadow: inset 2px 2px 5px rgb(2, 28, 77),2px 2px 5px rgba(0,0,0,0.5),-2px -2px 5px rgba(0,0,0,0.5);
+    /* transition: 0.5s; */
+    background-color: #e5e5f7;
+opacity: 1;
+background-size: 100% 100%;
+animation: animate 3s infinite;
+border-radius: 50%;
+background: rgb(17, 0, 255);
+background: linear-gradient(180deg, rgb(118, 211, 240) 0%, 
+rgb(0, 195, 255) 22%, rgb(7, 106, 255) 80%, rgb(19, 22, 187) 100%);
+}
+
+  
+.liquid::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top:15%;
+    left: 15%;
+    border-radius: 100%;
+  border-top: 3px solid rgba(247, 247, 247, 0.493);
+  transform: rotate(-45deg);
+} 
+.colors2{
+    left: 8%;
+  }
+.colors2 .liquid{
+    background: rgb(43, 255, 0);
+background: linear-gradient(180deg, rgb(163, 240, 118) 0%, 
+rgb(43, 255, 0) 22%, rgb(7, 255, 7) 80%, rgb(19, 187, 27) 100%);
+
+}
+ 
+.colors3{
+    left: 16%;
+  }
+.colors3 .liquid{
+    background: rgb(17, 0, 255);
+background: linear-gradient(180deg, rgb(240, 118, 193) 0%, 
+rgb(255, 0, 200) 22%, rgb(255, 7, 152) 80%, rgb(187, 19, 89) 100%);
+
+}
+
+.colors4{
+    left: 24%;
+  }
+.colors4 .liquid{
+    background: rgb(69, 2, 114);
+background: linear-gradient(180deg, rgb(188, 25, 238) 0%, 
+rgb(183, 76, 233) 22%, rgb(143, 7, 255) 80%, rgb(76, 3, 145) 100%);
+
+}
+
+.colors5{
+    left: 32%;
+  }
+.colors5 .liquid{
+    background: rgb(255, 230, 0);
+background: linear-gradient(180deg, rgb(240, 218, 118) 0%, 
+rgb(251, 255, 0) 22%, rgb(251, 255, 7) 80%, rgb(187, 170, 19) 100%);
+
+}
+
+.colors6{
+    left: 40%;
+  }
+.colors6 .liquid{
+    background: rgb(255, 81, 0);
+background: linear-gradient(180deg, rgb(240, 153, 118) 0%, 
+rgb(255, 115, 0) 22%, rgb(255, 98, 7) 80%, rgb(187, 44, 19) 100%);
+
+}
+
+.colors7{
+    left: 48%;
+  }
+.colors7 .liquid{
+    background: rgb(255, 0, 0);
+background: linear-gradient(180deg, rgb(240, 118, 118) 0%, 
+rgb(255, 0, 0) 22%, rgb(255, 7, 7) 80%, rgb(187, 19, 19) 100%);
+
+}
+.colors8{
+    left: 56%;
+  }
+.colors8 .liquid{
+    background: rgb(255, 0, 0);
+background: linear-gradient(180deg, rgb(83, 82, 82) 0%, 
+rgb(29, 25, 25) 22%, rgb(17, 17, 17) 80%, rgb(0, 0, 0) 100%);
+
+}
+
+.colors9{
+    left: 64%;
+  }
+.colors9 .liquid{
+    background: rgb(255, 255, 255);
+background: linear-gradient(180deg, rgb(236, 226, 226) 0%, 
+rgb(252, 244, 244) 22%, rgb(253, 246, 246) 80%, rgb(255, 255, 255) 100%);
+
+}
+
+.colors10{
+    left: 72%;
+  }
+.colors10 .liquid{
+    background: rgb(66, 46, 2);
+background: linear-gradient(180deg, rgb(88, 48, 2) 0%, 
+rgb(71, 34, 23) 22%, rgb(85, 47, 21) 80%, rgb(58, 29, 1) 100%);
+
+}
+.colors11{
+    left: 80%;
+  }
+.colors11 .liquid{
+    background: rgb(112, 112, 111);
+background: linear-gradient(180deg, rgb(146, 143, 139) 0%, 
+rgb(83, 80, 75) 22%, rgb(75, 72, 64) 80%, rgb(59, 59, 59) 100%);
+
+}
+.vehicles, .animals{
+    left: 2.5%;
+    top: 2.5%;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    background-image: url(../images/airplane.png);
+  }
+.vehicle2{
+     background-image: url(../images/ambulance.png);
+  }
+.vehicle3{
+     background-image: url(../images/bicycle.png);
+  }
+  .vehicle4{
+     background-image: url(../images/bus.png);
+  }
+.vehicle5{
+     background-image: url(../images/car.png);
+  }
+.vehicle6{
+     background-image: url(../images/fire.png);
+  }
+.vehicle7{
+     background-image: url(../images/helicopter.png);
+  }
+.vehicle8{
+     background-image: url(../images/motorcycle.png);
+  }
+.vehicle9{
+     background-image: url(../images/ship.png);
+  }
+.vehicle10{
+     background-image: url(../images/train.png);
+  }
+.animal1{
+     background-image: url(../images/bear.png);
+  }
+.animal2{
+     background-image: url(../images/cat.png);
+  }
+.animal3{
+     background-image: url(../images/cow.png);
+  }
+.animal4{
+     background-image: url(../images/dog.png);
+  }
+.animal5{
+     background-image: url(../images/elephant.png);
+  }
+.animal6{
+     background-image: url(../images/goat.png);
+  }
+.animal7{
+     background-image: url(../images/lion.png);
+  }
+.animal8{
+     background-image: url(../images/pig.png);
+  }
+.animal9{
+     background-image: url(../images/tiger.png);
+  }
+.animal10{
+     background-image: url(../images/zebra.png);
+  }
