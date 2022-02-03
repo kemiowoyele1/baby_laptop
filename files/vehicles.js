@@ -52,4 +52,5 @@ vehicle9.addEventListener("click", function(){
 })
 vehicle10.addEventListener("click", function(){
   vehiclesDisplay('train', 'train', 'train.mp3');
-})
+});
+
